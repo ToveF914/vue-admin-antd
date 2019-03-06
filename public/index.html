@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>天原集团危化品车辆管理系统</title>
+    <style type="text/css">
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #loading{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+      }
+      .loading{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ball_plus div{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 2px;
+        border-radius: 50%;
+        background-color: #40a9ff;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      @keyframes ball_plus {
+        0%{
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+        50%{
+          transform: scale(0.3);
+          -webkit-transform: scale(0.3);
+          opacity: 0.7;
+        }
+        100%{
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+  
+      }
+      .ball_plus div:nth-child(1){
+        -webkit-animation: ball_plus 1s linear infinite;
+        animation: ball_plus 1s linear infinite;
+      }
+      .ball_plus div:nth-child(2){
+        -webkit-animation: ball_plus 1s linear .2s infinite;
+        animation: ball_plus 1s linear .2s infinite;
+      }
+      .ball_plus div:nth-child(3){
+        -webkit-animation: ball_plus 1s linear .4s infinite;
+        animation: ball_plus 1s linear .4s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but ty-web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="loading">
+      <div class="loading">
+        <div class="ball_plus">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.js"></script>
+  </body>
+</html>
