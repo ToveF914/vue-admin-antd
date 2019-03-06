@@ -1,29 +1,27 @@
-# ty-web
+# 天原危化品车辆管理系统
 
-## Project setup
+## 安装依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 项目启动
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 发布
 ```
 yarn run build
 ```
 
-### Run your tests
+### 测试
 ```
 yarn run test
 ```
 
-### Lints and fixes files
+### 代码规范
 ```
 yarn run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
