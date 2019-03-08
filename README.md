@@ -3,6 +3,8 @@
 ```
 测试账号 guest,guard,admin,sadmin 密码与账号相同
 ```
+##线上预览地址
+http://39.108.95.179:8000/dist/index.html#/login
 
 ## 安装依赖
 ```
